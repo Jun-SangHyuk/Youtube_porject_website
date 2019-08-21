@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>1인 미디어팀 프로젝트</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+      <link href="http://fonts.googleapis.com/earlyaccess/notosanskr.css" rel="stylesheet">
+    <style>
+    .ns{font-family: 'Noto Sans KR', sans-serif;}
+
+      body{
+        margin: 0;
+      }
+      a{
+        color: black;
+        text-decoration: none;
+      }
+      ol {
+        border-right: 2px solid black;
+        width: 200px;
+        margin:0;
+        border-bottom: 2px solid black;
+      }
+      h1 {
+        text-align: center;
+        border-bottom: 3px solid black;
+        margin: 0;
+        padding: 20px;
+      }
+      #grid{
+        display: grid;
+        grid-template-columns: 150px 1fr;
+      }
+      #grid ol{
+        padding-left: 33px;
+      }
+      #grid li{
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+      #article{
+        padding-left: 100px;
+        border-bottom: 2px solid black;
+      }
+    </style>
+    <script type="text/javascript">
+
+        function oneCheckbox(a){
+
+            var obj = document.getElementsByName("checkbox1");
+
+            for(var i=0; i<obj.length; i++){
+
+                if(obj[i] != a){
+
+                    obj[i].checked = false;
+
+                }
+
+            }
+
+        }
+
+    </script>
+  </head>
+    <body class="ns">
+      <h1><a href="홈페이지 새로제작.html"><font color="green">1인미디어팀 프로젝트</font></a></h1>
+      <div id="grid">
+        <ol>
+          <li><a href="개발과정.html" title="개발과정">개발과정</a></li>
+          <li><a href="분석정보.html" title="분석정보">분석정보</a></li>
+          <li><a href="기존의 분석사이트 모음.html" title="기존의 분석사이트 모음">기존의 분석사이트 모음</a></li>
+          <li class="animated infinite bounce delay-2s"><a href="맞춤 서비스 검색.html" title="맞춤 서비스 검색"><strong>맞춤 서비스 검색</strong></a></li>
+          <li><a href="우리가 만든 모델.html" title="우리가 만든 모델">우리가 만든 모델</a></li>
+        </ol>
+        <div id="article">
+          <P>
+            <h3>당신만의 맞춤 예측모델</h3>
+            <li>당신의 연령대는?</li>
+            <form name="sendForm" method="get" >
+
+                <input type="checkbox" name="checkbox1" value="a1" onclick="oneCheckbox(this)">10대
+
+                <input type="checkbox" name="checkbox1" value="a2" onclick="oneCheckbox(this)">20대
+
+                <input type="checkbox" name="checkbox1" value="a3" onclick="oneCheckbox(this)">30대
+
+                <input type="checkbox" name="checkbox1" value="a4" onclick="oneCheckbox(this)">40대
+
+                <input type="checkbox" name="checkbox1" value="a5" onclick="oneCheckbox(this)">50대
+            </form>
+            <br>
+            <li>시작하고자 하는 콘텐츠 유형은?</li>
+            <form name="sendForm" method="get" >
+
+                <input type="checkbox" name="checkbox1" value="a1" onclick="oneCheckbox(this)">게임
+
+                <input type="checkbox" name="checkbox1" value="a2" onclick="oneCheckbox(this)">뷰티
+
+                <input type="checkbox" name="checkbox1" value="a3" onclick="oneCheckbox(this)">Vlog
+
+                <input type="checkbox" name="checkbox1" value="a4" onclick="oneCheckbox(this)">먹방
+
+                <input type="checkbox" name="checkbox1" value="a5" onclick="oneCheckbox(this)">영화
+
+                <input type="checkbox" name="checkbox1" value="a6" onclick="oneCheckbox(this)">음악
+
+                <input type="checkbox" name="checkbox1" value="a7" onclick="oneCheckbox(this)">패션
+
+                <input type="checkbox" name="checkbox1" value="a8" onclick="oneCheckbox(this)">댄스
+            </form>
+            <br></br>
+            <li>당신의 유튜브 주소는?</li>
+            <input type="text" name="유튜브 주소" value="주소를 입력해주세요.">
+            <br></br>
+            <li>이용하고 싶은 모델은?</li>
+            <input type="checkbox">댓글을 이용한 콘텐츠 예측
+            <br>
+            <input type="checkbox">해쉬태그를 활용한 예측
+            <br>
+            <input type="checkbox">장르별 구독자 격차의 원인분석
+            <br>
+            <input type="checkbox">펫튜브의 성장요인 분석
+
+
+        </div>
+      </div>
+
+  </body>
+</html>
